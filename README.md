@@ -6,4 +6,4 @@ This is a sample of a ZeroCopyInputStream and a ZeroCopyOutputStream to handle a
 Notes
 -----
 1. Logging code is commented out. You better uncomment and use your own logging framework to catch errors.
-2. This code was used in a production server, but currently doesn't have any associated tests. It is provided as is and wihtout guarantee.
+2. This code was used in a production server, but currently doesn't have any associated tests. It is provided as is and wihtout any guarantee.
