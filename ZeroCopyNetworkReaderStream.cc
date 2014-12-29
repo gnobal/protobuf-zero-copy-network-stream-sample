@@ -124,6 +124,7 @@ bool ZeroCopyNetworkReaderStream::Skip(int count) {
     }
 
     // TODO: proper error handling of read()
+    bytesToDump -= bytesToDumpThisIteration;
     m_remainingMessageSizeBytes -= bytesToDumpThisIteration;
     m_byteCount += bytesToDumpThisIteration;
   }
