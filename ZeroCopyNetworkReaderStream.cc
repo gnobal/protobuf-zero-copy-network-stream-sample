@@ -61,14 +61,14 @@ bool ZeroCopyNetworkReaderStream::Next(const void** data, int* size) {
   if (bytesRead == -1) {
     //pan::log(pan::error, "Failed to read message, numBytesToRead: ", pan::i(numBytesToRead),
     //  ", m_remainingMessageSizeBytes: ", pan::i(m_remainingMessageSizeBytes), ", m_fd: ",
-      pan::i(m_fd), ". ", ErrnoInserter());
+    //  pan::i(m_fd), ". ", ErrnoInserter());
     return false;
   }
   // TODO: for non-blocking I/O sockets the following test isn't correct
   if (bytesRead != numBytesToRead) {
     //pan::log(pan::error, "Partially read message, bytesRead: ", pan::i(bytesRead),
     //  ", numBytesToRead: ", pan::i(numBytesToRead), ", m_remainingMessageSizeBytes: ",
-      pan::i(m_remainingMessageSizeBytes), ". ", ErrnoInserter());
+    //  pan::i(m_remainingMessageSizeBytes), ". ", ErrnoInserter());
     return false;
   }
 
